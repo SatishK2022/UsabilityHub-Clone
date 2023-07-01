@@ -103,7 +103,7 @@ li{
 /* Header Section */
 header{
     margin-top: 30px;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .header-section{
@@ -232,7 +232,6 @@ header{
 .testimonial-section .left-testimonial{
     width: 50%;
     padding: 0 40px;
-
 }
 
 .testimonial-section .left-testimonial img{
@@ -315,6 +314,7 @@ header{
     flex-direction: row-reverse;
 }
 
+/* Our Platform Section */
 .our-platform{
     margin-top: 100px;
     display: flex;
@@ -512,10 +512,15 @@ footer{
     font-weight: 400;
 }
 
+.sub-footer .links a:hover{
+    color: #2294ed;
+}
+
 .sub-footer .social-icon{
     display: flex;
     gap: 35px;
 }
+
 
 .sub-footer .social-icon img{
     height: 18px;
@@ -530,5 +535,328 @@ footer{
     bottom: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+.hamburger .line{
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    margin-block: 5px;
+    border-radius: 5px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+/* 600px and down */
+@media only screen and (max-width: 478px) {
+    .container{
+        padding-inline: 20px;
+    }
+    
+    .top-banner p{
+        font-size: 14px;
+    }
+    
+    .navbar img{
+        width: 180px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    
+    .nav-links{
+        display: none;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .header-section .right-header img{
+        width: 100%;
+        height: auto;
+    }
+
+    .header-section .left-header{
+        margin-top: -50px;
+        text-align: center;
+        margin-inline: 10px;
+    }
+
+    .header-section .left-header h1{
+        font-size: 35px;
+    }
+
+    .header-section .left-header p{
+        font-size: 17px;
+        line-height: 20px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .our-companies{
+        margin-top: 60px;
+        margin-inline: 10px;
+    }
+
+    .company{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .our-companies p{
+        font-size: 16px;
+    }
+
+    .our-companies .company img{
+        width: 100px;
+        height: 50px;
+    }
+
+    .feature-section>img{
+        display: none;
+    }
+
+    .feature-section h2{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .feature-section button{
+        font-size: 14px;
+    }
+
+    .feature-section .cards-container{
+        margin-top: 20px;
+    }
+
+    .feature-section .cards-container .card{
+        width: 100%;
+    }
+
+    .feature-section .cards-container .card> img{
+        width: 40px;
+    }
+
+    .feature-section .cards-container .card >h3{
+        font-size: 20px;
+    }
+
+    .feature-section .cards-container .card p{
+        font-size: 17px;
+    }
+
+    .testimonial-section{
+        flex-direction: column;
+    }
+
+    .testimonial-section .left-testimonial{
+        width: 100%;
+        padding: 0;
+    }
+
+    .testimonial-section .left-testimonial img{
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial-section .right-testimonial{
+        padding: 0 0 0 30px;
+    }
+
+    .testimonial-section .right-testimonial h2{
+        font-size: 25px;
+    }
+
+    .testimonial-section .right-testimonial p{
+        font-size: 17px;
+        width: 100%;
+        line-height: 25px;
+        margin-block: 10px;
+    }
+
+    .user-details .user-designation{
+        gap: 10px;
+    }
+
+    .user-details .user-designation .user-img img{
+       width: 40px;
+    }
+
+    .user-details .user-designation .user-name h3{
+        font-size: 16px;
+    }
+
+    .user-details .user-designation .user-name p{
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .our-platform{
+        margin-top: 40px;
+    }
+
+    .our-platform h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .our-platform .primary-button{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .our-platform .cards{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .our-platform .cards .card{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .our-platform .cards .card img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .our-platform .cards .card h3{
+        bottom: 100px;
+    }
+
+    .inside-no-participants{
+        flex-direction: column-reverse;
+        padding-inline: 30px;
+    }
+
+    .inside-no-participants .right-no-participants{
+        width: 100%;
+        padding-inline: 25px;
+    }
+
+    .inside-no-participants .right-no-participants img{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-no-participants{
+        width: 100%;
+    }
+
+    .left-no-participants h2{
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .left-no-participants p{
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .our-pannel h3{
+        text-align: center;
+    }
+
+    .our-pannel .un-lists{
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+
+    .our-pannel .un-lists ul{
+        text-align: left;
+    }
+
+    .left-no-participants .buttons{
+        flex-direction: column;
+        gap: 0;
+        margin-top: 30px;
+    }
+
+    .left-no-participants .buttons p{
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .testing-day{
+        text-align: center;
+    }
+
+    .testing-day h3{
+        font-size: 28px;
+    }
+
+    .testing-day p{
+        font-size: 16px;
+    }
+
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer .logo img{
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .footer ul li a{
+        font-size: 15px;
+    }
+
+    .sub-footer{
+        flex-direction: column;
+    }
+
+    .sub-footer .links{
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .sub-footer .links a{
+        font-size: 14px;
+    }
+
+    .sub-footer .social-icon{
+        gap: 15px;
+    }
+
+    .sub-footer .social-icon img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .message{
+        width: 50px;
+    }
+}
+
+
+/* landscape tablets, 768px and up */
+@media only screen and (min-width: 478px) and (max-width: 768px) {
+    /* body{
+        background-color: orange;
+    } */
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    /* body{
+        background-color: cyan;
+    } */
 }
 
