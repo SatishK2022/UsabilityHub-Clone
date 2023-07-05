@@ -316,5 +316,13 @@
     <div class="message">
         <img src="./assets/message.png">
     </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navbar = document.querySelector(".nav-links");
+            navbar.classList.toggle("active")
+        }
+    </script>
 </body>
 </html>
